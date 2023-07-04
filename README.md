@@ -1,4 +1,4 @@
-# Computer Vision Project
+# Computer Vision Project: Aiding Prostate Cancer Diagnosis
 MIT 6.8300 Advances in Computer Vision
 
 ## Problem Statement

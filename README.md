@@ -31,10 +31,10 @@ No real gains in performance between ADC or T2W. Both imaging modalities are evi
 ![Baseline Mode Architecture](./baseline-model-arch.png)
 
 ## Report
-![6.8300 Final Report](./68300-final-report.pdf)
+[6.8300 Final Report](./68300-final-report.pdf)
 
 ## Presentation
-![6.8300 Final Presentation](./68300-final-presentation.pdf)
+[6.8300 Final Presentation](./68300-final-presentation.pptx)
 
 ## Notebooks
 There are 9 notebooks. For notebooks prefixed with 01 to 08, the naming format are as follows:

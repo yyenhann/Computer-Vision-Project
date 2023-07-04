@@ -27,6 +27,7 @@ These were the key findings:
 
 ## Gradient Class Activation Maps (GradCAMs)
 ![GradCAM](./gradcam-vis.png)
+
 For interpretability purposes and to better understand what features the model was learning, a GradCAM (Gradient Class Activation Map) was adopted to visualize the learned features from the final convolutional layer of the model. An example is shown above, which was flagged with clinically significant cancer, for the reweighted and fine-tuned last block model. In this example, the model underperformance can be attributed to its difficulty in accurately identifying the small cancerous regions, as reflected in the figure above. As the cancerous regions are relatively small and not well defined, the features that distinguish cancerous cells from healthy ones might be highly complex or subtle, thus making them difficult for the model to learn and accurately detect. 
 
 ## Conclusions

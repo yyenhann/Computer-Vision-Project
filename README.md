@@ -25,6 +25,10 @@ These were the key findings:
 
 - **Roughly similar performances seen with the baseline**: In earlier models, feature extraction needed to be performed on a single modality, and the model needed to learn all relevant features from that single source. In the two-branch model, the burden of feature extraction is shared across two different modalities, which might make the task easier, hence resulting in comparable testing performances.
 
+## Gradient Class Activation Maps (GradCAMs)
+![GradCAM](./gradcam-vis.png)
+For interpretability purposes and to better understand what features the model was learning, a GradCAM (Gradient Class Activation Map) was adopted to visualize the learned features from the final convolutional layer of the model. An example is shown above, which was flagged with clinically significant cancer, for the reweighted and fine-tuned last block model. In this example, the model underperformance can be attributed to its difficulty in accurately identifying the small cancerous regions, as reflected in the figure above. As the cancerous regions are relatively small and not well defined, the features that distinguish cancerous cells from healthy ones might be highly complex or subtle, thus making them difficult for the model to learn and accurately detect. 
+
 ## Conclusions
 No real gains in performance between ADC or T2W. Both imaging modalities are evidently needed to make a reliable decision. This was reflected by the earlier model performances vs. the simple CNN baseline. Nonetheless, we would have explored further into using UNet and vision transformers that can use two image modalities to enhance predictions given more time and compute resources.
 

@@ -11,7 +11,7 @@ A data pre-processing step has been defined in the report. For each patient, we 
 - Reweighting classes: To handle the class imbalance
 - Retraining: Either keep ImageNet weights, retrain just the last block of VGG19, or retrain the entire VGG19 model
 
-The results from above were then compared against a simple convolutional neural network (CNN) architecture that takes both ADC and T2W images as inputs to emulate a doctor’s decision making process (i.e., we wanted to compare a single image modality vs. a two image modality model), which forms the baseline model (See page 3 for architecture)
+The results from above were then compared against a simple convolutional neural network (CNN) architecture that takes both ADC and T2W images as inputs to emulate a doctor’s decision making process (i.e., we wanted to compare a single image modality vs. a two image modality model), which forms the baseline model and is shown in the **Baseline Model Architecture** section.
 
 ## Results and Discussion
 ![Precision Recall Results](./precision-recall-results.png)
@@ -33,6 +33,7 @@ For interpretability purposes and to better understand what features the model w
 ## Conclusions
 No real gains in performance between ADC or T2W. Both imaging modalities are evidently needed to make a reliable decision. This was reflected by the earlier model performances vs. the simple CNN baseline. Nonetheless, we would have explored further into using UNet and vision transformers that can use two image modalities to enhance predictions given more time and compute resources.
 
+## Baseline Model Architecture
 ![Baseline Mode Architecture](./baseline-model-arch.png)
 
 ## Report
